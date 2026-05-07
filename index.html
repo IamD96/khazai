@@ -3,80 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khazai 2026 Campaign</title>
+  <title>Khazai Political Strategy</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <div class="logo">KHAZAI 2026</div>
-      <ul>
-        <li><a href="#vision">Vision</a></li>
-        <li><a href="#leader">Leader</a></li>
-        <li><a href="#promises">Promises</a></li>
-        <li><a href="#join">Join Us</a></li>
-      </ul>
-    </nav>
 
-    <div class="hero-content">
-      <h1>भारत का नया विज़न</h1>
-      <p class="tagline">Innovation • Integrity • Inclusion</p>
-      <h2>Chief Khazai Officer</h2>
-      <p class="name">Chandrabhal Dubey</p>
-      <button id="campaignBtn">Join The Movement</button>
-    </div>
-  </header>
-
-  <section id="vision" class="section">
-    <h2>Our Vision</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Digital India 2.0</h3>
-        <p>Smart governance, AI-enabled services, and rural internet expansion.</p>
-      </div>
-      <div class="card">
-        <h3>Youth Employment</h3>
-        <p>Startup grants, coding schools, and innovation hubs in every district.</p>
-      </div>
-      <div class="card">
-        <h3>Green Bharat</h3>
-        <p>Clean rivers, solar villages, and sustainable development policies.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="leader" class="section dark">
-    <h2>Meet The Leadership</h2>
-    <p>
-      Chief Khazai Officer <strong>Chandrabhal Dubey</strong> represents a futuristic,
-      tech-driven India focused on opportunity, transparency, and grassroots empowerment.
-    </p>
-  </section>
-
-  <section id="promises" class="section">
-    <h2>Campaign Promises</h2>
-    <ul class="promises">
-      <li>⚡ 24x7 electricity in every village</li>
-      <li>📚 Free digital education platforms</li>
-      <li>🚄 Faster transport & smart infrastructure</li>
-      <li>💼 Tech jobs and startup ecosystem growth</li>
-      <li>🌾 Modern support for farmers</li>
+<header class="hero">
+  <nav class="navbar">
+    <div class="logo">KHAZAI</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#movement">Movement</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </section>
+  </nav>
 
-  <section id="join" class="section dark">
-    <h2>Become A Volunteer</h2>
-    <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <button type="submit">Support Khazai 2026</button>
-    </form>
-  </section>
+  <div class="hero-overlay"></div>
 
-  <footer>
-    <p>© 2026 Khazai Campaign | Designed for a visionary India</p>
-  </footer>
+  <div class="hero-content">
+    <p class="mini">India • Democracy • Innovation</p>
+    <h1>Building The Next Political Wave Of India</h1>
+    <p class="hero-text">
+      A data-driven political campaign initiative led by
+      <strong>Chief Khazai Officer Chandrabhal Dubey</strong>.
+    </p>
 
-  <script src="script.js"></script>
+    <div class="hero-buttons">
+      <button id="joinBtn">Join Campaign</button>
+      <button class="secondary">Watch Vision</button>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="section split">
+  <div>
+    <h2>About Khazai</h2>
+    <p>
+      Khazai is a modern Indian political consulting and grassroots movement platform focused on
+      digital outreach, youth engagement, governance innovation, and nation-first leadership.
+    </p>
+    <p>
+      Inspired by technology, transparency, and public participation, the initiative combines
+      campaign strategy with social impact.
+    </p>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card">
+      <h3>500+</h3>
+      <p>Volunteers</p>
+    </div>
+    <div class="stat-card">
+      <h3>50+</h3>
+      <p>District Campaigns</p>
+    </div>
+    <div class="stat-card">
+      <h3>1M+</h3>
+      <p>Digital Reach</p>
+    </div>
+  </div>
+</section>
+
+<section id="vision" class="section dark">
+  <h2>Our Core Agenda</h2>
+
+  <div class="grid">
+    <div class="agenda-card">
+      <h3>Digital Governance</h3>
+      <p>AI-enabled citizen services and transparent governance systems.</p>
+    </div>
+
+    <div class="agenda-card">
+      <h3>Young India</h3>
+      <p>Entrepreneurship, coding education, and future-ready employment.</p>
+    </div>
+
+    <div class="agenda-card">
+      <h3>Village Transformation</h3>
+      <p>Infrastructure, internet access, healthcare, and rural opportunity.</p>
+    </div>
+
+    <div class="agenda-card">
+      <h3>Political Innovation</h3>
+      <p>Modern campaign analytics and ethical public engagement.</p>
+    </div>
+  </div>
+</section>
+
+<section id="movement" class="section banner">
+  <div class="banner-content">
+    <h2>“The future belongs to those who build it.”</h2>
+    <p>
+      Khazai 2026 is a youth-powered political movement designed for a stronger India.
+    </p>
+  </div>
+</section>
+
+<section class="section leadership">
+  <div class="leader-box">
+    <h2>Chief Khazai Officer</h2>
+    <h1>Chandrabhal Dubey</h1>
+    <p>
+      Visionary strategist, technologist, and advocate for a digitally empowered democracy.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="section contact-section">
+  <h2>Become A Volunteer</h2>
+
+  <form id="campaignForm">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="City">
+    <textarea placeholder="Why do you want to join?"></textarea>
+
+    <button type="submit">Apply Now</button>
+  </form>
+</section>
+
+<footer>
+  <div class="footer-logo">KHAZAI</div>
+  <p>Designed for a futuristic Indian political movement.</p>
+</footer>
+
 </body>
 </html>
